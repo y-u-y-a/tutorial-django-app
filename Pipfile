@@ -1,0 +1,24 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+django = "==2.2.7"
+gunicorn = "*"
+mysqlclient = "==1.4.5"
+
+[requires]
+python_version = "3.7"
+
+[scripts]
+server = "python manage.py runserver"
+shell = "python manage.py shell"
+makemigrations = "python manage.py makemigrations"
+sqlmigrate = "python manage.py sqlmigrate"
+migrate = "python manage.py migrate"
+showmigrations = "python manage.py showmigrations"
+check = "python manage.py check"
+createsuperuser = "python manage.py createsuperuser"
